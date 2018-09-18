@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="app.css">
+
+</head>
+<body >
+<h1> build your resume here</h1>
+<hr/>
+<div class="container boxx">
+<form method="get" action="#">
+  <div >
+      <div class="info">
+          <h3>Personal information</h3>
+          <table style="width: 100%">
+              <tr>
+                  <td><lable for="name">Name</lable>  </td>
+                  <td><input type="text" name="name" ></td>
+              </tr>
+              <tr>
+                  <td><lable for="emailid">Email ID</lable></td>
+                  <td><input type="text" name="emailid"></td>
+              </tr>
+              <tr>
+                  <td><lable for="number">Number</lable></td>
+                  <td><input type="text" name="number"></td>
+              </tr>
+              <tr>
+                  <td><lable for="address">Address</lable> </td>
+                  <td> <textarea rows="4" name="address"></textarea> </td>
+              </tr>
+          </table>
+      </div>
+
+      <div class="edu">
+          <h3>Educational information</h3>
+          <p>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hsc" aria-expanded="false" aria-controls="collapseExample">
+                  Class 12th
+              </button>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ssc" aria-expanded="false" aria-controls="collapseExample">
+                  Class 10th
+              </button>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ug" aria-expanded="false" aria-controls="collapseExample">
+                  Under Graduation
+              </button>
+          </p>
+          <div class="collapse" id="hsc">
+              <h5>class 12th</h5>
+              <table style="width: 100%">
+                  <tr>
+                      <td><lable for="nschool">Name of School </lable>  </td>
+                      <td><input type="text" name="nschool" ></td>
+                  </tr>
+                  <tr>
+                      <td><lable for="yop">Year of Passing</lable></td>
+                      <td><input type="text" name="yop"></td>
+                  </tr>
+                  <tr>
+                      <td><lable for="percentage">Percentage</lable></td>
+                      <td><input type="text" name="percentage"></td>
+                  </tr>
+              </table>
+          </div>
+          <div class="collapse" id="ssc">
+              <h5>class 10th</h5>
+              <table style="width: 100%">
+                  <tr>
+                      <td><lable for="nschool">Name of School </lable>  </td>
+                      <td><input type="text" name="nschool" ></td>
+                  </tr>
+                  <tr>
+                      <td><lable for="yop">Year of Passing</lable></td>
+                      <td><input type="text" name="yop"></td>
+                  </tr>
+                  <tr>
+                      <td><lable for="percentage">Percentage</lable></td>
+                      <td><input type="text" name="percentage"></td>
+                  </tr>
+              </table>
+          </div>
+          <div class="collapse" id="ug">
+              <h5>Under Graduation</h5>
+              <table style="width: 100%">
+                  <tr>
+                      <td><lable for="nschool">Name of School </lable>  </td>
+                      <td><input type="text" name="nschool" ></td>
+                  </tr>
+                  <tr>
+                      <td><lable for="ncourse">Name of course </lable>  </td>
+                      <td><input type="text" name="ncourse" ></td>
+                  </tr>
+                  <tr>
+                      <td><lable for="yop">Year of Passing</lable></td>
+                      <td><input type="text" name="yop"></td>
+                  </tr>
+                  <tr>
+                      <td><lable for="percentage">Percentage</lable></td>
+                      <td><input type="text" name="percentage"></td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+      <div class="work">
+          <h3>Work Experience</h3>
+          <div>
+              <input type='checkbox' name="work" id="exp" data-toggle='collapse' data-target='#experienced'> Experienced
+              </input>
+              <input type="checkbox" name="work" id="fresh">Freshers</input>
+
+          </div>
+          <div id='experienced' class='collapse div1'>
+              <table style="width: 100%">
+                  <tr>
+                      <td><lable for="experience">Your Experience </lable>  </td>
+                      <td><textarea rows="2" cols="70" name="experience"></textarea> </td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+      <div class="projects">
+          <h3>Projects</h3>
+          <table id="tbl" width="69%">
+              <tr>
+                  <td><input type="text" placeholder="name" name="pname" /></td>
+                  <td><textarea name="pdisc" cols="70" rows="2" placeholder="description"></textarea></td>
+              </tr>
+           </table>
+          <input type="button" class="button add_another" value="add project">
+      </div>
+      <div class="pd">
+          <h3>Personal Dossier</h3>
+          <table style="width: 80%">
+              <tr>
+                  <td><lable for="dob">D.O.B</lable>  </td>
+                  <td><input type="text" name="dob" ></td>
+              </tr>
+              <tr>
+                  <td><lable for="nationality">Nationality</lable></td>
+                  <td><input type="text" name="nationality"></td>
+              </tr>
+              <tr>
+                  <td><lable for="lang">Linguistic Competencies</lable></td>
+                  <td><input type="text" name="lang"></td>
+              </tr>
+          </table>
+      </div>
+
+  </div>
+    <input type="submit" name="submit">
+</form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

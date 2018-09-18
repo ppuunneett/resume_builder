@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+body{
+    background-color: powderblue;
+}
+hr{
+    border: solid 0.5px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+}
